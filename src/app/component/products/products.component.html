@@ -1,1 +1,9 @@
-<p>products works!</p>
+<div *ngFor=" let product of products | async ">
+  <div>
+    {{product.data.name}}
+    {{product.data.price}}
+    {{product.data.category}}
+    <button>View product</button>
+  </div>
+
+</div>
